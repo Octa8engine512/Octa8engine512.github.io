@@ -1,170 +1,274 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil Personal</title>
+  <title>Octavio Dante Valenzuela Pareja</title>
+  <style>
+    :root {
+      --turquoise: #14b8a6;
+      --turquoise-dark: #0f766e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+      color: #1e2937;
+      line-height: 1.7;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--turquoise-dark), var(--turquoise));
+      color: white;
+      text-align: center;
+      padding: 55px 30px;
+      border-radius: 20px 20px 0 0;
+      margin-bottom: 30px;
+      box-shadow: 0 15px 35px rgba(20, 184, 166, 0.25);
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.95;
+    }
+
+    .section-block {
+      background-color: white;
+      margin-bottom: 28px;
+      border-radius: 16px;
+      padding: 38px 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      border-left: 6px solid var(--turquoise);
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      color: var(--turquoise-dark);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      color: var(--turquoise-dark);
+      margin: 30px 0 16px;
+    }
+
+    p, li {
+      font-size: 1.08rem;
+      color: #334155;
+    }
+
+    a {
+      color: var(--turquoise);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: var(--turquoise-dark);
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    li {
+      padding: 9px 0;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    li:before {
+      content: "→";
+      color: var(--turquoise);
+      position: absolute;
+      left: 4px;
+      font-size: 1.2rem;
+    }
+
+    /* Sección Hobbies */
+    .hobbies-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hobbies-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hobbies-image-container {
+      flex: 0 0 360px;
+      text-align: center;
+    }
+
+    .hobbies-image-container img {
+      width: 100%;
+      max-width: 360px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-caption {
+      font-size: 1rem;
+      color: #64748b;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    footer {
+      background-color: white;
+      text-align: center;
+      padding: 30px;
+      color: #64748b;
+      font-size: 1rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .hobbies-content {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hobbies-image-container {
+        margin-top: 25px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ===== ENCABEZADO ===== -->
-  <header>
-    <h1>Valenzuela Pareja Octavio Dante</h1></h1>
-    <p>Página personal académica</p>
-  </header>
+  <div class="container">
 
-  <hr>
+    <!-- ENCABEZADO -->
+    <header>
+      <h1>Octavio Dante Valenzuela Pareja</h1>
+      <p>Página personal académica</p>
+    </header>
 
-  <!-- ===== INFORMACIÓN PERSONAL ===== -->
-  <section>
-    <h2>Información Personal</h2>
+    <!-- INFORMACIÓN PERSONAL -->
+    <div class="section-block">
+      <h2>Información Personal</h2>
+      <p><strong>Nombre completo:</strong> Valenzuela Pareja Octavio Dante</p>
+      <p><strong>Correo electrónico:</strong> 
+        <a href="mailto:OctavioD.ValenzuelaPareja@outlook.com">OctavioD.ValenzuelaPareja@outlook.com</a>
+      </p>
+      <p><strong>Correo institucional:</strong> 
+        <a href="mailto:octavio.valenzuelap@unmsm.edu.pe">octavio.valenzuelap@unmsm.edu.pe</a>
+      </p>
+    </div>
 
-    <p><strong>Nombre completo:</strong> Valenzuela Pareja Octavio Dante</p>
+    <!-- INFORMACIÓN ACADÉMICA -->
+    <div class="section-block">
+      <h2>Información Académica</h2>
+      <p><strong>Universidad:</strong> Universidad Nacional Mayor de San Marcos</p>
+      <p><strong>Facultad:</strong> Facultad de Ingeniería de Sistemas e Informática</p>
+      <p><strong>Carrera:</strong> Inteligencia Artificial</p>
+      <p><strong>Ciclo actual:</strong> Primer semestre</p>
+      <p><strong>Código de estudiante:</strong> 26200296</p>
+    </div>
 
-    <p><strong>Correo electrónico:</strong>
-      <a href="https://outlook.live.com/mail/">OctavioD.ValenzuelaPareja@outlook.com</a>
-    </p>
+    <!-- CURSOS -->
+    <div class="section-block">
+      <h2>Cursos que Estudio</h2>
+      <ul>
+        <li>Introducción a la Computación</li>
+        <li>Cálculo I</li>
+        <li>Álgebra y Geometría Analítica</li>
+        <li>Redacción y Técnicas de Comunicación Afectiva I</li>
+        <li>Métodos de Estudio Universitario</li>
+        <li>Desarrollo Personal y Liderazgo</li>
+        <li>Medio Ambiente y Desarrollo Sostenible</li>
+      </ul>
+    </div>
 
-    <p><strong>Correo institucional:</strong>
-      <a href="mailto:octavio.valenzuelap@unmsm.edu.pe"> octavio.valenzuelap@unmsm.edu.pe</a>
-    </p>
-  </section>
+    <!-- REDES -->
+    <div class="section-block">
+      <h2>Mis Perfiles en Redes</h2>
+      <ul>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/octavio-dante-valenzuela-pareja-32a044406/" target="_blank">linkedin.com/in/octavio-dante-valenzuela-pareja</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/Octa8engine512" target="_blank">github.com/Octa8engine512</a></li>
+      </ul>
+    </div>
 
-  <hr>
+    <!-- PERSONAS RELACIONADAS -->
+    <div class="section-block">
+      <h2>Personas y Recursos Relacionados</h2>
 
-  <!-- ===== INFORMACIÓN ACADÉMICA ===== -->
-  <section>
-    <h2>Información Académica</h2>
+      <h3>Docente</h3>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">Prof. Ernesto Cuadros Vargas</a></li>
+      </ul>
 
-    <p><strong>Universidad:</strong> Universidad Nacional Mayor de San Marcos</p>
+      <h3>Compañeros de Clase</h3>
+      <ul>
+        <li><a href="https://01-achulli.github.io/" target="_blank">Achulli Rivera, Kiara Camila</a></li>
+        <li><a href="https://www.linkedin.com/in/yosue-humberto-fura-almanza-1018b4407/" target="_blank">Fura Almanza, Yosue Humberto</a></li>
+        <li><a href="https://jhoos-a1ban.github.io/jhosney-alban/" target="_blank">Alban Pacaya, Jhosney María Teresa</a></li>
+        <li><a href="https://p4h3.github.io/P4H3/" target="_blank">Huaynate Espinoza, Piero Alejandro</a></li>
+        <li><a href="https://lucerohuinchoh-jus.github.io/" target="_blank">Huincho Huamaní, Lucero</a></li>
+        <li><a href="https://www.linkedin.com/in/anderson-jose-morales-alejandro-464717406/" target="_blank">Morales Alejandro, Anderson Jose</a></li>
+        <li><a href="https://nvynn166.github.io/" target="_blank">Puquio Gonzalo, Naysha Nadinne</a></li>
+      </ul>
+    </div>
 
-    <p><strong>Facultad:</strong> Facultad de Ingeniería de Sistemas e Informatica</p>
+    <!-- HOBBIES -->
+    <div class="section-block">
+      <h2>Hobbies</h2>
+      <div class="hobbies-content">
+        <div class="hobbies-text">
+          <ul>
+            <li>Tallado de madera</li>
+            <li>Leer libros distópicos</li>
+            <li>Videojuegos</li>
+            <li>Dibujar</li>
+            <li>Hacer ejercicio</li>
+            <li>Cantar</li>
+            <li>Escuchar música</li>
+          </ul>
+        </div>
+        
+        <div class="hobbies-image-container">
+          <p class="image-caption">Imagen referencial del autor de la página web</p>
+          <img src="SET UP (1).png" alt="Pixel Art Octavio Dante">
+        </div>
+      </div>
+    </div>
 
-    <p><strong>Carrera:</strong> Inteligencia Artificial</p>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <p><strong>© 2026 Valenzuela Pareja Octavio Dante</strong> — Todos los derechos reservados</p>
+      <p>Última actualización: Junio 2026</p>
+    </footer>
 
-    <p><strong>Ciclo actual:</strong> Primer semestre</p>
-
-    <p><strong>Código de estudiante:</strong> 26200296</p>
-  </section>
-
-  <hr>
-
-  <!-- ===== CURSOS ===== -->
-  <section>
-    <h2>Cursos que Estudio</h2>
-
-    <ul>
-      <li>Introducción a la computación</li>
-      <li>Caculo I</li>
-      <li>Algebra y geometría analítica</li>
-      <li>Redacción y tecnicas de comunicación afectiva I</li>
-      <li>Métodos de estudio universitario</li>
-      <li>Desarrollo personal y liderazgo</li>
-      <li>Medio ambiente y desarrollo sostenible</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ===== PERFILES EN REDES ===== -->
-  <section>
-    <h2>Mis Perfiles en Redes</h2>
-
-    <ul>
-      <li>
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/octavio-dante-valenzuela-pareja-32a044406/"_blank">
-          https://www.linkedin.com/in/octavio-dante-valenzuela-pareja-32a044406/
-        </a>
-      </li>
-
-      <li>
-        <strong>GitHub:</strong>
-        <a href="https://github.com/Octa8engine512" target="_blank">https://github.com/Octa8engine512
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ===== ENLACES A OTRAS PERSONAS ===== -->
-  <section>
-    <h2>Personas y Recursos Relacionados</h2>
-
-    <h3>Docente</h3>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank">
-          Prof. Ernesto Cuadros Vargas
-        </a>
-      </li>
-    </ul>
-
-    <h3>Compañeros de Clase</h3>
-    <ul>
-      <li> 
-        <a href="https://www.linkedin.com/in/kiara-camila-achulli-rivera-8b2758406/">
-          Achulli Rivera, Kiara Camila
-        </a> </li>
-      <li>
-        <a href="https://www.linkedin.com/in/yosue-humberto-fura-almanza-1018b4407/">
-          Fura Almanza, Yosue Humberto
-        </a>  </li>
-      <li>
-        <a href="https://www.linkedin.com/in/jhosney-maria-teresa-alban-pacaya-aba237406/">
-          Alban Pacaya, Jhosney María Teresa
-        </a> </li>
-      <li>
-        <a href="https://www.linkedin.com/in/piero-alejandro-huaynate-espinoza-9a7126406/">
-          Huaynate Espinoza, Piero Alejandro
-        </a>  </li>
-      <li>
-        <a href="https://www.linkedin.com/in/lucero-huincho-huaman%C3%AD-732605343/?skipRedirect=true">
-          Huincho Huamaní, Lucero
-        </a>  </li>
-      <li>
-        <a href="https://www.linkedin.com/in/anderson-jose-morales-alejandro-464717406/?skipRedirect=true">
-          Morales Alejandro, Anderson Jose
-        </a>  </li>
-      <li>
-        <a href="https://www.linkedin.com/in/naysha-puquio-gonzalo-16ou6ts1de/">
-          Puquio Gonzalo, Naysha Nadinne
-        </a>  </li>      
-    </ul>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ===== INFORMACIÓN EXTRA ===== -->
-  <section>
-    <h2>Sobre Mí</h2>
-
-    <p>Soy estudiante de Inteligencia Artificial.  
-      Me gusta aprender nuevas tecnologías y colaborar en proyectos de software,
-      ademas quisiera crear mi propia IA y que se vuelva lo mas cercano a un dios omnisciente y omnipresente.</p>
-    <h3>Hobbies</h3>
-    <ul>
-      <li>Tallado de madera</li>
-      <li>Leer libros distopicos</li>
-      <li>Videojuegos</li>
-      <li>Dibujar</li>
-      <li>Hacer ejercicios</li>
-      <li>Cantar</li>
-      <li>Escuchar música</li>
-    </ul>
-  </section>
-
-  <hr>
-
-  <!-- ===== PIE DE PÁGINA ===== -->
-  <footer>
-    <p>© 2026 Valenzuela Pareja Octavio Dante | Todos los derechos reservados</p>
-    <p>Última actualización: junio 2026</p>
-  </footer>
+  </div>
 
 </body>
 </html>
